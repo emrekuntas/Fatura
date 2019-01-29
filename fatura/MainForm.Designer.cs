@@ -1,6 +1,6 @@
 ﻿namespace fatura
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -94,6 +94,7 @@
             this.ilçeEkleToolStripMenuItem.Name = "ilçeEkleToolStripMenuItem";
             this.ilçeEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ilçeEkleToolStripMenuItem.Text = "İlçe Ekle";
+            this.ilçeEkleToolStripMenuItem.Click += new System.EventHandler(this.ilçeEkleToolStripMenuItem_Click);
             // 
             // faturaİşlmleriToolStripMenuItem
             // 
@@ -116,14 +117,14 @@
             this.sorgulaToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.sorgulaToolStripMenuItem.Text = "FaturaOlustur";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

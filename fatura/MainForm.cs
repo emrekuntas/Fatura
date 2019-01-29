@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace fatura
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -21,6 +21,12 @@ namespace fatura
         {
             //
             Formİl form = new Formİl();
+            form.Show();
+        }
+
+        private void ilçeEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formilce form = new Formilce();
             form.Show();
         }
     }

@@ -69,7 +69,7 @@ namespace fatura
             db.SaveChanges();
             Listele();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("il seçiniz..");
                
@@ -87,7 +87,7 @@ namespace fatura
                 Listele();
 
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
                 MessageBox.Show("il seçiniz..");
