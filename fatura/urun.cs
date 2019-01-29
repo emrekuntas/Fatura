@@ -13,6 +13,7 @@ namespace fatura
     public partial class urun : Form
     {
         FaturaContext db = new FaturaContext();
+        int secilenId;
         public urun()
         {
             InitializeComponent();
@@ -61,5 +62,47 @@ namespace fatura
 
         }
 
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                secilenId = (int)dataGridView1.CurrentRow.Cells[0].Value;
+                Urun u = db.urunler.Find(secilenId);
+                txtUrunAdı.Text = u.UrunAdi;
+                txtkod.Text = u.UrunKodu;
+                txtBirimFiyat.Text = u.BirimFiyat.ToString();
+                comboBox1.SelectedValue = u.birim.BirimId;
+
+            }
+            catch (Exception)
+            {
+
+
+                return;
+            }
+        
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Urun u = db.urunler.Find(secilenId);
+            u.BirimId = (int)comboBox1.SelectedValue;
+            u.UrunAdi = txtUrunAdı.Text;
+            u.UrunKodu = txtkod.Text;
+            u.BirimFiyat = Convert.ToDecimal(txtBirimFiyat.Text);
+            db.SaveChanges();
+            listele();
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Urun u = db.urunler.Find(secilenId);
+            db.urunler.Remove(u);
+            db.SaveChanges();
+            listele();
+
+
+        }
     }
 }
