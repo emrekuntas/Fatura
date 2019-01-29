@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtİlAdi = new System.Windows.Forms.TextBox();
+            this.txtİlceAdi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -41,12 +41,12 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtİlAdi
+            // txtİlceAdi
             // 
-            this.txtİlAdi.Location = new System.Drawing.Point(76, 62);
-            this.txtİlAdi.Name = "txtİlAdi";
-            this.txtİlAdi.Size = new System.Drawing.Size(288, 20);
-            this.txtİlAdi.TabIndex = 11;
+            this.txtİlceAdi.Location = new System.Drawing.Point(76, 62);
+            this.txtİlceAdi.Name = "txtİlceAdi";
+            this.txtİlceAdi.Size = new System.Drawing.Size(288, 20);
+            this.txtİlceAdi.TabIndex = 11;
             // 
             // label1
             // 
@@ -98,7 +98,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.txtİlAdi);
+            this.groupBox1.Controls.Add(this.txtİlceAdi);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.button2);
@@ -145,7 +145,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtİlAdi;
+        private System.Windows.Forms.TextBox txtİlceAdi;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
