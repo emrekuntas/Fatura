@@ -35,29 +35,29 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.comboBoxSehir = new System.Windows.Forms.ComboBox();
-            this.comboBoxİlce = new System.Windows.Forms.ComboBox();
-            this.textİrsaliye = new System.Windows.Forms.TextBox();
-            this.textÜrünFiyatı = new System.Windows.Forms.TextBox();
-            this.textkdv = new System.Windows.Forms.TextBox();
-            this.textÜrünBirimi = new System.Windows.Forms.TextBox();
             this.comboBoxMusteri = new System.Windows.Forms.ComboBox();
+            this.textİrsaliye = new System.Windows.Forms.TextBox();
+            this.comboBoxİlce = new System.Windows.Forms.ComboBox();
+            this.comboBoxSehir = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBoxÜrünAdı = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textÜürnMiktarı = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textÜrünBirimi = new System.Windows.Forms.TextBox();
+            this.textkdv = new System.Windows.Forms.TextBox();
+            this.textÜrünFiyatı = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textÜürnMiktarı = new System.Windows.Forms.TextBox();
-            this.comboBoxÜrünAdı = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -132,10 +132,49 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(36, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(348, 273);
+            this.groupBox1.Size = new System.Drawing.Size(348, 252);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "müşteri";
+            // 
+            // comboBoxMusteri
+            // 
+            this.comboBoxMusteri.FormattingEnabled = true;
+            this.comboBoxMusteri.Location = new System.Drawing.Point(109, 102);
+            this.comboBoxMusteri.Name = "comboBoxMusteri";
+            this.comboBoxMusteri.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxMusteri.TabIndex = 6;
+            // 
+            // textİrsaliye
+            // 
+            this.textİrsaliye.Location = new System.Drawing.Point(109, 135);
+            this.textİrsaliye.Name = "textİrsaliye";
+            this.textİrsaliye.Size = new System.Drawing.Size(121, 20);
+            this.textİrsaliye.TabIndex = 5;
+            // 
+            // comboBoxİlce
+            // 
+            this.comboBoxİlce.FormattingEnabled = true;
+            this.comboBoxİlce.Location = new System.Drawing.Point(109, 73);
+            this.comboBoxİlce.Name = "comboBoxİlce";
+            this.comboBoxİlce.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxİlce.TabIndex = 4;
+            // 
+            // comboBoxSehir
+            // 
+            this.comboBoxSehir.FormattingEnabled = true;
+            this.comboBoxSehir.Location = new System.Drawing.Point(109, 44);
+            this.comboBoxSehir.Name = "comboBoxSehir";
+            this.comboBoxSehir.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxSehir.TabIndex = 3;
+            this.comboBoxSehir.SelectedIndexChanged += new System.EventHandler(this.comboBoxSehir_SelectedIndexChanged);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(109, 168);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 2;
             // 
             // groupBox2
             // 
@@ -154,35 +193,91 @@
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Location = new System.Drawing.Point(427, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(264, 273);
+            this.groupBox2.Size = new System.Drawing.Size(264, 252);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "ürün";
             // 
-            // dateTimePicker1
+            // comboBoxÜrünAdı
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(109, 168);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 2;
+            this.comboBoxÜrünAdı.FormattingEnabled = true;
+            this.comboBoxÜrünAdı.Location = new System.Drawing.Point(112, 14);
+            this.comboBoxÜrünAdı.Name = "comboBoxÜrünAdı";
+            this.comboBoxÜrünAdı.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxÜrünAdı.TabIndex = 13;
             // 
-            // button1
+            // label12
             // 
-            this.button1.Location = new System.Drawing.Point(34, 196);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ürün Ekle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(31, 146);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(63, 13);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Ürün miktarı";
             // 
-            // button2
+            // textÜürnMiktarı
             // 
-            this.button2.Location = new System.Drawing.Point(141, 196);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Ürün Güncelle";
-            this.button2.UseVisualStyleBackColor = true;
+            this.textÜürnMiktarı.Location = new System.Drawing.Point(112, 139);
+            this.textÜürnMiktarı.Name = "textÜürnMiktarı";
+            this.textÜürnMiktarı.Size = new System.Drawing.Size(100, 20);
+            this.textÜürnMiktarı.TabIndex = 11;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(31, 115);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(26, 13);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "Kdv";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(31, 78);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 13);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Ürün Birimi";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(31, 52);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 13);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Ürün fiyatı";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(31, 22);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 13);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Ürün Adı:";
+            // 
+            // textÜrünBirimi
+            // 
+            this.textÜrünBirimi.Location = new System.Drawing.Point(112, 74);
+            this.textÜrünBirimi.Name = "textÜrünBirimi";
+            this.textÜrünBirimi.Size = new System.Drawing.Size(100, 20);
+            this.textÜrünBirimi.TabIndex = 9;
+            // 
+            // textkdv
+            // 
+            this.textkdv.Location = new System.Drawing.Point(112, 108);
+            this.textkdv.Name = "textkdv";
+            this.textkdv.Size = new System.Drawing.Size(100, 20);
+            this.textkdv.TabIndex = 8;
+            // 
+            // textÜrünFiyatı
+            // 
+            this.textÜrünFiyatı.Location = new System.Drawing.Point(112, 45);
+            this.textÜrünFiyatı.Name = "textÜrünFiyatı";
+            this.textÜrünFiyatı.Size = new System.Drawing.Size(100, 20);
+            this.textÜrünFiyatı.TabIndex = 7;
             // 
             // button3
             // 
@@ -193,57 +288,23 @@
             this.button3.Text = "Ürün Sil";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // comboBoxSehir
+            // button2
             // 
-            this.comboBoxSehir.FormattingEnabled = true;
-            this.comboBoxSehir.Location = new System.Drawing.Point(109, 44);
-            this.comboBoxSehir.Name = "comboBoxSehir";
-            this.comboBoxSehir.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxSehir.TabIndex = 3;
+            this.button2.Location = new System.Drawing.Point(141, 196);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(93, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Ürün Güncelle";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // comboBoxİlce
+            // button1
             // 
-            this.comboBoxİlce.FormattingEnabled = true;
-            this.comboBoxİlce.Location = new System.Drawing.Point(109, 69);
-            this.comboBoxİlce.Name = "comboBoxİlce";
-            this.comboBoxİlce.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxİlce.TabIndex = 4;
-            // 
-            // textİrsaliye
-            // 
-            this.textİrsaliye.Location = new System.Drawing.Point(109, 135);
-            this.textİrsaliye.Name = "textİrsaliye";
-            this.textİrsaliye.Size = new System.Drawing.Size(121, 20);
-            this.textİrsaliye.TabIndex = 5;
-            // 
-            // textÜrünFiyatı
-            // 
-            this.textÜrünFiyatı.Location = new System.Drawing.Point(112, 45);
-            this.textÜrünFiyatı.Name = "textÜrünFiyatı";
-            this.textÜrünFiyatı.Size = new System.Drawing.Size(100, 20);
-            this.textÜrünFiyatı.TabIndex = 7;
-            // 
-            // textkdv
-            // 
-            this.textkdv.Location = new System.Drawing.Point(112, 108);
-            this.textkdv.Name = "textkdv";
-            this.textkdv.Size = new System.Drawing.Size(100, 20);
-            this.textkdv.TabIndex = 8;
-            // 
-            // textÜrünBirimi
-            // 
-            this.textÜrünBirimi.Location = new System.Drawing.Point(112, 74);
-            this.textÜrünBirimi.Name = "textÜrünBirimi";
-            this.textÜrünBirimi.Size = new System.Drawing.Size(100, 20);
-            this.textÜrünBirimi.TabIndex = 9;
-            // 
-            // comboBoxMusteri
-            // 
-            this.comboBoxMusteri.FormattingEnabled = true;
-            this.comboBoxMusteri.Location = new System.Drawing.Point(109, 102);
-            this.comboBoxMusteri.Name = "comboBoxMusteri";
-            this.comboBoxMusteri.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxMusteri.TabIndex = 6;
+            this.button1.Location = new System.Drawing.Point(34, 196);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Ürün Ekle";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -266,9 +327,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(36, 291);
+            this.dataGridView1.Location = new System.Drawing.Point(36, 270);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(478, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(584, 171);
             this.dataGridView1.TabIndex = 6;
             // 
             // label7
@@ -279,66 +340,6 @@
             this.label7.Size = new System.Drawing.Size(77, 13);
             this.label7.TabIndex = 7;
             this.label7.Text = "Fatura Toplamı";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(31, 22);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 13);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Ürün Adı:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(31, 52);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 13);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Ürün fiyatı";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(31, 78);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(57, 13);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Ürün Birimi";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(31, 115);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(26, 13);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Kdv";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(31, 146);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 13);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Ürün miktarı";
-            // 
-            // textÜürnMiktarı
-            // 
-            this.textÜürnMiktarı.Location = new System.Drawing.Point(112, 139);
-            this.textÜürnMiktarı.Name = "textÜürnMiktarı";
-            this.textÜürnMiktarı.Size = new System.Drawing.Size(100, 20);
-            this.textÜürnMiktarı.TabIndex = 11;
-            // 
-            // comboBoxÜrünAdı
-            // 
-            this.comboBoxÜrünAdı.FormattingEnabled = true;
-            this.comboBoxÜrünAdı.Location = new System.Drawing.Point(112, 14);
-            this.comboBoxÜrünAdı.Name = "comboBoxÜrünAdı";
-            this.comboBoxÜrünAdı.Size = new System.Drawing.Size(100, 21);
-            this.comboBoxÜrünAdı.TabIndex = 13;
             // 
             // Fatura
             // 

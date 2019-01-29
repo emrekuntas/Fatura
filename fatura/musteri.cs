@@ -23,7 +23,6 @@ namespace fatura
         private void musteri_Load(object sender, EventArgs e)
         {
             ilDoldur();
-            
             listele();
         }
 
@@ -63,7 +62,7 @@ namespace fatura
         {
             
             var list = from i in db.ilceler
-                       where    i.IlId == (int)comboBoxşehir.SelectedValue
+                       where i.IlId == (int)comboBoxşehir.SelectedValue
                        orderby i.IlceAdi
                        select new
                        {

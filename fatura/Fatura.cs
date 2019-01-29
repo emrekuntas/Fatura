@@ -25,7 +25,15 @@ namespace fatura
         {
             MusteriSehirDoldur();
             UrunDoldur();
+            IlDoldur();
+        }
 
+        private void IlDoldur()
+        {
+            var list = from i in db.iller select new { i.IlId, i.IlAdi };
+            comboBoxSehir.DisplayMember = "IlAdi";
+            comboBoxSehir.ValueMember = "IlId";
+            comboBoxSehir.DataSource = list;
         }
 
         private void UrunDoldur()
@@ -47,6 +55,23 @@ namespace fatura
             comboBoxSehir.ValueMember = "IlId";
             comboBoxSehir.DisplayMember = "IlAdi";
             comboBoxSehir.DataSource = list;
+        }
+
+        private void comboBoxSehir_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            IlceDoldur();
+        }
+
+        private void IlceDoldur()
+        {
+            var ilce = from i in db.ilceler
+                       where i.IlId == (int)comboBoxSehir.SelectedValue
+                       orderby i.IlceAdi
+                       select new { i.IlceId, i.IlceAdi,i.IlId };
+            comboBoxİlce.DisplayMember = "IlceAdi";
+            comboBoxİlce.ValueMember = "IlceId";
+            comboBoxİlce.DataSource = ilce.ToList();
+
         }
     }
 }
