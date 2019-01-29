@@ -16,5 +16,12 @@ namespace fatura
         {
             InitializeComponent();
         }
+
+        private void ilEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //
+            Formİl form = new Formİl();
+            form.Show();
+        }
     }
 }
