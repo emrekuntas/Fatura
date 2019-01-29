@@ -59,6 +59,12 @@
     <Compile Include="birim.Designer.cs">
       <DependentUpon>birim.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fatura.Designer.cs">
+      <DependentUpon>Fatura.cs</DependentUpon>
+    </Compile>
     <Compile Include="FaturaContext.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -86,6 +92,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="secilenUrun.cs" />
     <Compile Include="urun.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +101,9 @@
     </Compile>
     <EmbeddedResource Include="birim.resx">
       <DependentUpon>birim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatura.resx">
+      <DependentUpon>Fatura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
