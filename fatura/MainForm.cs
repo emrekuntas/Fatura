@@ -29,5 +29,11 @@ namespace fatura
             Formilce form = new Formilce();
             form.Show();
         }
+
+        private void birimEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            birim birim = new birim();
+            birim.Show();
+        }
     }
 }

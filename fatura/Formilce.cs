@@ -74,5 +74,51 @@ namespace fatura
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Ilce ilce = db.ilceler.Find(secilenId);
+                ilce.IlceAdi = txtİlceAdi.Text;
+                ilce.IlId = (int)comboBox1.SelectedValue;
+                db.SaveChanges();
+                listele();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ilce seçiniz..");
+
+            }
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            secilenId = Convert.ToInt32(dataGridView1.CurrentRow.Cells[1].Value.ToString());
+
+            txtİlceAdi.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+         
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+            Ilce ilce = db.ilceler.Find(secilenId);
+            db.ilceler.Remove(ilce);
+            db.SaveChanges();
+            listele();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ilce seçiniz..");
+              
+            }
+            
+
+
+        }
     }
 }

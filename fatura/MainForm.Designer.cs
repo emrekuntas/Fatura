@@ -75,6 +75,7 @@
             this.birimEkleToolStripMenuItem.Name = "birimEkleToolStripMenuItem";
             this.birimEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.birimEkleToolStripMenuItem.Text = "Birim Ekle";
+            this.birimEkleToolStripMenuItem.Click += new System.EventHandler(this.birimEkleToolStripMenuItem_Click);
             // 
             // urunEkleToolStripMenuItem
             // 
