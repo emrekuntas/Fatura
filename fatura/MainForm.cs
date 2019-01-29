@@ -35,5 +35,17 @@ namespace fatura
             birim birim = new birim();
             birim.Show();
         }
+
+        private void müşteriEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            musteri m = new musteri();
+            m.Show();
+        }
+
+        private void urunEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            urun u = new urun();
+            u.Show();
+        }
     }
 }

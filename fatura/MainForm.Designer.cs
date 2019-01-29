@@ -69,6 +69,7 @@
             this.müşteriEkleToolStripMenuItem.Name = "müşteriEkleToolStripMenuItem";
             this.müşteriEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.müşteriEkleToolStripMenuItem.Text = "Müşteri Ekle";
+            this.müşteriEkleToolStripMenuItem.Click += new System.EventHandler(this.müşteriEkleToolStripMenuItem_Click);
             // 
             // birimEkleToolStripMenuItem
             // 
@@ -82,6 +83,7 @@
             this.urunEkleToolStripMenuItem.Name = "urunEkleToolStripMenuItem";
             this.urunEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.urunEkleToolStripMenuItem.Text = "Urun Ekle";
+            this.urunEkleToolStripMenuItem.Click += new System.EventHandler(this.urunEkleToolStripMenuItem_Click);
             // 
             // ilEkleToolStripMenuItem
             // 
