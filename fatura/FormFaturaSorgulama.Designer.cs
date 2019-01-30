@@ -39,13 +39,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBoxfatura = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxSehir
             // 
             this.comboBoxSehir.FormattingEnabled = true;
-            this.comboBoxSehir.Location = new System.Drawing.Point(546, 27);
+            this.comboBoxSehir.Location = new System.Drawing.Point(600, 27);
             this.comboBoxSehir.Name = "comboBoxSehir";
             this.comboBoxSehir.Size = new System.Drawing.Size(121, 21);
             this.comboBoxSehir.TabIndex = 0;
@@ -54,7 +56,7 @@
             // comboBoxİlce
             // 
             this.comboBoxİlce.FormattingEnabled = true;
-            this.comboBoxİlce.Location = new System.Drawing.Point(546, 54);
+            this.comboBoxİlce.Location = new System.Drawing.Point(600, 54);
             this.comboBoxİlce.Name = "comboBoxİlce";
             this.comboBoxİlce.Size = new System.Drawing.Size(121, 21);
             this.comboBoxİlce.TabIndex = 0;
@@ -63,7 +65,7 @@
             // comboBoxMusteri
             // 
             this.comboBoxMusteri.FormattingEnabled = true;
-            this.comboBoxMusteri.Location = new System.Drawing.Point(546, 81);
+            this.comboBoxMusteri.Location = new System.Drawing.Point(600, 81);
             this.comboBoxMusteri.Name = "comboBoxMusteri";
             this.comboBoxMusteri.Size = new System.Drawing.Size(121, 21);
             this.comboBoxMusteri.TabIndex = 0;
@@ -81,7 +83,7 @@
             // labe
             // 
             this.labe.AutoSize = true;
-            this.labe.Location = new System.Drawing.Point(491, 35);
+            this.labe.Location = new System.Drawing.Point(545, 35);
             this.labe.Name = "labe";
             this.labe.Size = new System.Drawing.Size(31, 13);
             this.labe.TabIndex = 1;
@@ -90,7 +92,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(491, 62);
+            this.label3.Location = new System.Drawing.Point(545, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(27, 13);
             this.label3.TabIndex = 1;
@@ -99,7 +101,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(478, 89);
+            this.label4.Location = new System.Drawing.Point(532, 89);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 13);
             this.label4.TabIndex = 1;
@@ -107,7 +109,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(703, 27);
+            this.button1.Location = new System.Drawing.Point(738, 27);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 75);
             this.button1.TabIndex = 2;
@@ -127,10 +129,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 122);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 108);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(766, 316);
+            this.dataGridView1.Size = new System.Drawing.Size(801, 197);
             this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // textBoxfatura
             // 
@@ -140,12 +143,21 @@
             this.textBoxfatura.TabIndex = 6;
             this.textBoxfatura.TextChanged += new System.EventHandler(this.textBoxfatura_TextChanged);
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(12, 311);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(801, 195);
+            this.dataGridView2.TabIndex = 7;
+            // 
             // FormFaturaSorgulama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(856, 518);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.textBoxfatura);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label5);
@@ -162,6 +174,7 @@
             this.Text = "FormFaturaSorgulama";
             this.Load += new System.EventHandler(this.FormFaturaSorgulama_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +193,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBoxfatura;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

@@ -13,6 +13,7 @@ namespace fatura
     public partial class FormFaturaSorgulama : Form
     {
         FaturaContext db = new FaturaContext();
+        int secileId;
         public FormFaturaSorgulama()
         {
             InitializeComponent();
@@ -128,6 +129,12 @@ namespace fatura
         private void textBoxfatura_TextChanged(object sender, EventArgs e)
         {
             listele();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            secileId = (int)dataGridView1.CurrentRow.Cells[0].Value;
+            dataGridView2.DataSource = (from fd in db.faturadetay where fd.FaturaId == secileId orderby fd.UrunId select fd).ToList();
         }
     }
 }
