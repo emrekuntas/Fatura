@@ -66,6 +66,12 @@
       <DependentUpon>Fatura.cs</DependentUpon>
     </Compile>
     <Compile Include="FaturaContext.cs" />
+    <Compile Include="FormFaturaSorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFaturaSorgulama.Designer.cs">
+      <DependentUpon>FormFaturaSorgulama.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fatura.resx">
       <DependentUpon>Fatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFaturaSorgulama.resx">
+      <DependentUpon>FormFaturaSorgulama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

@@ -50,7 +50,8 @@ namespace fatura
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             secilenid = (int)dataGridView1.CurrentRow.Cells[0].Value;
-
+            var birim = db.birimler.Find(secilenid);
+            txtbirimdi.Text = birim.BirimAdi;
 
         }
 

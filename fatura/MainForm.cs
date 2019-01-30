@@ -47,5 +47,17 @@ namespace fatura
             urun u = new urun();
             u.Show();
         }
+
+        private void sorgulaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fatura f = new Fatura();
+            f.Show();
+        }
+
+        private void görüntüleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormFaturaSorgulama f = new FormFaturaSorgulama();
+            f.Show();
+        }
     }
 }
